@@ -1,7 +1,6 @@
----@diagnostic disable: undefined-global
 local ACL = {
     PRIORITY = 950,
-    VERSION = "1.0-2",
+    VERSION = "1.0-2"
 }
 
 ---https://docs.konghq.com/konnect/reference/plugins/
@@ -22,7 +21,7 @@ function ACL:access(plugin_conf)
 
 end
 
-function CheckValue (tab, val)
+function CheckValue(tab, val)
     for _, value in ipairs(tab) do
         for _, val_value in ipairs(val) do
             if value == val_value then
