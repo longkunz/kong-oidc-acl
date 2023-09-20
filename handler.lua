@@ -1,7 +1,7 @@
 ---@diagnostic disable: undefined-global
 local ACL = {
     PRIORITY = 950,
-    VERSION = "1.0",
+    VERSION = "1.0-2",
 }
 
 ---https://docs.konghq.com/konnect/reference/plugins/
