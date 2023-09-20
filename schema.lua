@@ -13,13 +13,17 @@ return {
                 whitelist = {
                     type = "array",
                     required = false,
-                    elements = {}
+                    elements = {{
+                        type = "string"
+                    }}
                 }
             }, {
                 blacklist = {
                     type = "array",
                     required = false,
-                    elements = {}
+                    elements = {{
+                        type = "string"
+                    }}
                 }
             }, {
                 userinfo_header_name = {
