@@ -15,7 +15,8 @@ return {
                     required = false,
                     elements = {{
                         type = "string"
-                    }}
+                    }},
+                            default = {}
                 }
             }, {
                 blacklist = {
@@ -23,7 +24,8 @@ return {
                     required = false,
                     elements = {{
                         type = "string"
-                    }}
+                    }},
+                            default = {}
                 }
             }, {
                 userinfo_header_name = {
