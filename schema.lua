@@ -9,31 +9,16 @@ return {
     }, {
         config = {
             type = "record",
-            fields = { {
-                whitelist = {
-                    type = "array",
-                    required = false,
-                    elements = { {
-                        type = "string",
-                        required = false
-                    } },
-                    default = {}
-                }
+            fields = { 
+                {
+                whitelist = { type = "array", elements = { type = "string" }, }
             }, {
-                blacklist = {
-                    type = "array",
-                    required = false,
-                    elements = { {
-                        type = "string",
-                        required = false
-                    } },
-                    default = {}
-                }
+                blacklist = { type = "array", elements = { type = "string" }, }
             }, {
                 userinfo_header_name = {
                     type = "string",
                     required = false,
-                    default = "x-userinfo"
+                    default = "x-userinfo",
                 }
             } },
             entity_checks = { {

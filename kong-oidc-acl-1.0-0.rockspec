@@ -15,7 +15,7 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["kong.plugins.oidc-acl.handler"] = "handler.lua",
-    ["kong.plugins.oidc-acl.schema"]  = "schema.lua"
+    ["kong.oidc-acl.handler"] = "handler.lua",
+    ["kong.oidc-acl.schema"]  = "schema.lua"
   }
 }

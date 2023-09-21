@@ -3,6 +3,9 @@ local ACL = {
     VERSION = "1.0-0"
 }
 
+local ngx = ngx
+local kong = kong
+
 ---https://docs.konghq.com/konnect/reference/plugins/
 local cjson = require("cjson")
 
