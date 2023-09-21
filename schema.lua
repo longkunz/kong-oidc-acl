@@ -2,30 +2,32 @@ local typedefs = require "kong.db.schema.typedefs"
 
 return {
     name = "oidc-acl",
-    fields = {{
+    fields = { {
         consumer = typedefs.no_consumer
     }, {
         protocols = typedefs.protocols_http
     }, {
         config = {
             type = "record",
-            fields = {{
+            fields = { {
                 whitelist = {
                     type = "array",
                     required = false,
-                    elements = {{
-                        type = "string"
-                    }},
-                            default = {}
+                    elements = { {
+                        type = "string",
+                        required = false
+                    } },
+                    default = {}
                 }
             }, {
                 blacklist = {
                     type = "array",
                     required = false,
-                    elements = {{
-                        type = "string"
-                    }},
-                            default = {}
+                    elements = { {
+                        type = "string",
+                        required = false
+                    } },
+                    default = {}
                 }
             }, {
                 userinfo_header_name = {
@@ -33,13 +35,13 @@ return {
                     required = false,
                     default = "x-userinfo"
                 }
-            }},
-            entity_checks = {{
-                only_one_of = {"config.whitelist", "config.blacklist"}
+            } },
+            entity_checks = { {
+                only_one_of = { "config.whitelist", "config.blacklist" }
             }, {
-                at_least_one_of = {"config.whitelist", "config.blacklist"}
-            }}
+                at_least_one_of = { "config.whitelist", "config.blacklist" }
+            } }
 
         }
-    }}
+    } }
 }
