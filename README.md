@@ -6,7 +6,7 @@ Restrict access to a Service or a Route by whitelisting or blacklisting user usi
 Install luarocks and run the following command
 
 ```bash
-luarocks install kong-plugin-oidc-acl
+luarocks install kong-oidc-acl
 ```
 You also need to set the KONG_PLUGINS environment variable
 

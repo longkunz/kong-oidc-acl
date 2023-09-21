@@ -1,6 +1,6 @@
 local ACL = {
     PRIORITY = 950,
-    VERSION = "1.0-2"
+    VERSION = "1.0-0"
 }
 
 ---https://docs.konghq.com/konnect/reference/plugins/
