@@ -10,7 +10,7 @@ local kong = kong
 local cjson = require("cjson")
 
 function ACL:access(plugin_conf)
-    local whitelist = plugin_conf.whitelist
+    local whitelist = plugin_conf.allow
     local userroles = GetUserRoles(plugin_conf.userinfo_header_name)
 
     if CheckValue(whitelist, userroles) then
